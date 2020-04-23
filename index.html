@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" height=device-height, width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <div class="container-global">
+        <nav class="nav-top" onclick="guardarDatos()">
+            <h2>Notas con WebStorage!</h2>
+        </nav>
+        
+        <section class="container-notas" id="container-notas">
+        </section>
+        <section class="container-menu">
+            <div class="menu-title">
+                <h3>Agregar nuevas notas</h3>
+            </div>
+            <div class="menu-add-form">
+                <div id="textarea-menu">
+                    <input type="text" id="titulo-menu" maxlength="25" size="33" placeholder="Titulo de la nota">
+                    <textarea id="textarea-menu-form" rows="4" cols="40"  maxlength="250" placeholder="Escribe tu nota aqui..."></textarea>
+                </div>
+                <div id="others-menu">
+                    <label>SELECCIONE COLOR</label>
+                    <br>
+                    <select id="select-color-form"  size="4">
+                        <option value="rosa" selected="selected">Rosa</option>
+                        <option value="verde">Verde</option>
+                        <option value="naranja">Naranja</option>
+                        <option value="amarillo">Amarillo</option>
+                    </select>
+                </div>    
+                <div id="button-menu">
+                    <button type="submit" id="btn-add-form" onclick="obtenerDatosNota()"> Agregar Nota </button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
